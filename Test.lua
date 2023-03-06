@@ -170,7 +170,7 @@ function NotificationTheme.newNotification(TitleText, BodyText, NotificationType
 		if Notification and Notification:FindFirstChild("StatusColour") and Notification:FindFirstChild("StatusBar") then
 			Notification:TweenSize(UDim2.new(0, 400, 0, 100), "In", "Quad", 0)
 			Notification.StatusColour:TweenSize(UDim2.new(0, 400, 0, 100), "In", "Quad", 0)
-			wait(0.25)
+			wait(0)
 			local timetaken = tick()
 			coroutine.wrap(function()
 				Notification.StatusBar:TweenSize(UDim2.new(0, 400, 0, 100), "In", "Quad", 0)
